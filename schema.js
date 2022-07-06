@@ -3,6 +3,8 @@ const axios = require("axios")
 const { GraphQLObjectType, GraphQLInt, GraphQLString, GraphQLBoolean, GraphQLList, GraphQLSchema } = require('graphql');
 
 //Launch Type
+/* Creating a new GraphQLObjectType called LaunchType. It is also defining the fields that will be
+returned when a query is made. */
 const LaunchType = new GraphQLObjectType({
     name: "Launch",
     fields: () => ({
@@ -16,6 +18,8 @@ const LaunchType = new GraphQLObjectType({
 });
 
 //Rocket Type
+/* Creating a new GraphQLObjectType called RocketType. It is also defining the fields that will be
+returned when a query is made. */
 
 const RocketType = new GraphQLObjectType({
     name: 'Rocket',
@@ -29,6 +33,9 @@ const RocketType = new GraphQLObjectType({
 //Root Query
 
 const RootQuery = new GraphQLObjectType({
+    /* Defining the fields that will be returned when a query is
+made. */
+
     name: 'RootQueryType',
     fields: {
         launches: {
