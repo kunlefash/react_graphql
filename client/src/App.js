@@ -15,6 +15,7 @@ function App() {
   return (
     <div className="homepage">
       <img src={logo} alt="SpaceForce" style={{width: 300, display: 'block', margin: 'auto'}}/>
+      <h1>SpaceX</h1>
     </div>
   );
 }
